@@ -1,0 +1,7 @@
+El wirescan es un programa que envia mensajes a un slave del 
+dispositivo I2C dada una dirección específica, lo va recorriendo 
+dirección por dirección con un ciclo for, con la función endTransmission 
+se termina la transmisión al esclavo iniciado por la función anterior y 
+transmite los bytes que estaban en cola por una función interna write(), 
+a partir de esto, dependiendo el valor que regrese, es si pudo o no enviar 
+y recibir la información,  esto se hace mediante discriminantes con un ciclo if-else.
