@@ -1,0 +1,8 @@
+Para el sensor atomférico es adecuado elprotocolo I2C, 
+porque es simple para lo que se necesita hacer, 
+que en realidad es sólo el sensor mandando información de lo que se quiere medir
+y recibiendo instrucciónes, no se necesita de un dispositivo tan complejo para 
+llevar a cabo esta tarea, por el contrario es bueno usar el protocolo SPI con el 
+lector de tarjetas pues lo que se usa es un dispositivo más complejo que intercambia 
+información de ida y vuelta muchas veces en poco tiempo, por lo que conviene usar un 
+protocolo síncrono full-duplex, por el tipo de comunicación que se requiere con una tarjeta sd. 
